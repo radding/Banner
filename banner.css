@@ -1,0 +1,18 @@
+.home-banner {height:292px;width:684px;margin-top:0px;float:left;margin-bottom:0px;z-index:0;}
+.home-banner>ul {list-style-type:none;margin:0;padding:0;width:684px;height:292px;position:absolute;overflow:hidden;z-index:0;}
+.home-banner>ul>li {height:292px;float:left;width:114px;padding:0;display:none;z-index:0;}
+
+.banner-one>li {background-image:url(phmtox_rotate03.png);z-index:0;}
+.banner-two>li {background-image:url(phmtox_rotate02.png);z-index:0;}
+.banner-three>li {background-image:url(phmtox_rotate01.png);z-index:0;}
+.banner-four>li {background-image:url(phmtox_rotate04.png);z-index:0;}
+
+.home-banner>ul>li.li-one {background-position:0 0;z-index:0;}
+.home-banner>ul>li.li-two {background-position:-114px 0;z-index:0;}
+.home-banner>ul>li.li-three {background-position:-228px 0;z-index:0;}
+.home-banner>ul>li.li-four {background-position:-342px 0;z-index:0;}
+.home-banner>ul>li.li-five {background-position:-456px 0;z-index:0;}
+.home-banner>ul>li.li-six {background-position:-570px 0;z-index:0;}
+.home-banner>ul>li.text {width:684px;position:absolute;display:none;z-index:0;}
+.home-banner>ul>li.right {left:100%;z-index:0;}
+.home-banner>ul>li.left {left:-100%;z-index:0;}

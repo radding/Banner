@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banner image test</title>
+    <link rel="stylesheet" type="text/css" href="banner.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="banner.js"></script>
+</head>
+
+<body>
+    <div class="home-banner">
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+        <ul class="banner-one">
+            <li class="li-one subslide"></li>
+            <li class="li-two subslide"></li>
+            <li class="li-three subslide"></li>
+            <li class="li-four subslide"></li>
+            <li class="li-five subslide"></li>
+            <li class="li-six subslide"></li>
+            <!--<li class="text right"></li> -->
+        </ul>
+        <ul class="banner-two" data-style="z-index: 0;">
+            <li class="li-one subslide" data-style="display: list-item;"></li>
+            <li class="li-two subslide" data-style="display: list-item;"></li>
+            <li class="li-three subslide" data-style="display: list-item;"></li>
+            <li class="li-four subslide" data-style="display: list-item;"></li>
+            <li class="li-five subslide" data-style="display: list-item;"></li>
+            <li class="li-six subslide" data-style="display: list-item;"></li>
+            <!--<li class="text left" data-style="display: block; left: -100.174%;"></li>-->
+        </ul>
+        <ul class="banner-three" data-style="z-index: 1;">
+            <li class="li-one subslide" data-style="display: list-item; opacity: 0;"></li>
+            <li class="li-two subslide" data-style="display: none;"></li>
+            <li class="li-three subslide" data-style="display: none;"></li>
+            <li class="li-four subslide" data-style="display: none;"></li>
+            <li class="li-five subslide" data-style="display: none;"></li>
+            <li class="li-six subslide" data-style="display: none;"></li>
+            <!--<li class="text right" data-style="display: block; left: 100%;"></li> -->
+        </ul>
+        <ul class="banner-four" data-style="z-index: 0;">
+            <li class="li-one subslide" data-style="display: none;"></li>
+            <li class="li-two subslide" data-style="display: none;"></li>
+            <li class="li-three subslide" data-style="display: none;"></li>
+            <li class="li-four subslide" data-style="display: none;"></li>
+            <li class="li-five subslide" data-style="display: none;"></li>
+            <li class="li-six subslide" data-style="display: none;"></li>
+            <!--<li class="text right" data-style="display: block; left: 100%;"></li> -->
+        </ul>
+    </div>
+    <script>
+        $(".home-banner").banner();
+    </script>
+</body>
