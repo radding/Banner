@@ -159,7 +159,11 @@ Banner.prototype._transition = function(index) {
         window.canClick = true;
     });
     setTimeout(function() {
-        last.hide();
+        for (var i = self.slides.length - 1; i >= 0; i--) {
+            if (i != self.index)
+                self.slides[i].hide();
+        };
+        //last.hide();
     }, 3000);
     self.current = next;
 
@@ -167,7 +171,9 @@ Banner.prototype._transition = function(index) {
 
 Banner.prototype.restartTimer = function() {
     clearTimeout(self.timer);
-    self.timer = setInterval(function() { self.transition(); }, 7000);
+    setTimeout(function() {
+        self.timer = setInterval(function() { self.transition(); }, 7000);
+    }, 7000);
 }
 
 Banner.prototype.init = function() {
@@ -190,12 +196,14 @@ Banner.prototype.init = function() {
         $("#left").on("click", function() {
             if( !window.canClick ) return;
             window.canClick = false;
+            clearTimeout(self.timer);
             self.banner.transitionDown();
             self.banner.restartTimer();
         });
         $("#right").on("click", function() {
             if( !window.canClick ) return;
             window.canClick = false;
+            clearTimeout(self.timer);
             self.banner.transition();
             self.banner.restartTimer();
         });
